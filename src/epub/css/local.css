@@ -37,7 +37,7 @@ section[epub|type~="dedication"] > *{
 /* End all dedications */
 
 section[epub|type~="dedication"] b{
-	font-size: 1.25em;
+	font-size: larger;
 }
 
 [epub|type~="z3998:poem"] p,
