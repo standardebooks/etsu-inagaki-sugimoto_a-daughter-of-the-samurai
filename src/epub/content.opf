@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0 rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">https://standardebooks.org/ebooks/etsu-inagaki-sugimoto/a-daughter-of-the-samurai</dc:identifier>
 		<dc:date>2022-03-20T21:28:18Z</dc:date>
 		<meta property="dcterms:modified">2022-03-20T21:28:18Z</meta>
 		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
 		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
 		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
-		<meta property="se:url.homepage" refines="#publisher">https://standardebooks.org/</meta>
+		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
 		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
 		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
 		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
-		<meta property="se:url.homepage" refines="#type-designer">https://www.theleagueofmoveabletype.com/</meta>
+		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
 		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
 		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
 		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
@@ -41,8 +42,8 @@
 		<meta property="term" refines="#subject-3">sh2008104297</meta>
 		<meta property="authority" refines="#subject-4">LCSH</meta>
 		<meta property="term" refines="#subject-4">sh2008113706</meta>
-		<meta property="se:subject">Autobiography</meta>
-		<meta property="se:subject">Nonfiction</meta>
+		<meta property="schema:genre">Autobiography</meta>
+		<meta property="schema:genre">Nonfiction</meta>
 		<dc:description id="description">The autobiography of Etsu Sugimoto, a girl born into a samurai family in a time of great cultural changes.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
 			&lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/etsu-inagaki-sugimoto"&gt;Etsu Inagaki Sugimoto&lt;/a&gt; was born into a samurai family in the years following the Meiji Restoration in 1868. In this autobiography, she recounts her experiences growing up in a culture with very strict expectations. As her family’s influence and power wanes, a marriage is arranged for her and she leaves to join her future husband in America.&lt;/p&gt;
@@ -51,30 +52,32 @@
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://en.wikisource.org/wiki/A_Daughter_of_the_Samurai</dc:source>
 		<dc:source>https://archive.org/details/a-daughter-of-the-samurai</dc:source>
-		<meta property="se:word-count">95390</meta>
-		<meta property="se:reading-ease.flesch">66.37</meta>
-		<meta property="se:url.vcs.github">https://github.com/standardebooks/etsu-inagaki-sugimoto_a-daughter-of-the-samurai</meta>
+		<meta property="schema:wordCount">95390</meta>
+		<meta property="schema:educationalLevel">66.37</meta>
+		<meta property="schema:workExample" id="vcs-repository">schema:workExample</meta>
+		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
+		<link href="https://github.com/standardebooks/etsu-inagaki-sugimoto_a-daughter-of-the-samurai" refines="#vcs-repository" rel="schema:codeRepository"/>
 		<dc:creator id="author">Etsu Inagaki Sugimoto</dc:creator>
 		<meta property="file-as" refines="#author">Sugimoto, Etsu Inagaki</meta>
 		<meta property="alternate-script" refines="#author" xml:lang="ja">杉本 鉞子</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Etsu_Inagaki_Sugimoto</meta>
-		<meta property="se:url.authority.nacoaf" refines="#author">http://id.loc.gov/authorities/names/nr97043966</meta>
+		<link href="https://en.wikipedia.org/wiki/Etsu_Inagaki_Sugimoto" refines="#author" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/nr97043966.html" refines="#author" rel="schema:sameAs"/>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">dto</meta>
 		<dc:contributor id="artist">William Merritt Chase</dc:contributor>
 		<meta property="file-as" refines="#artist">Chase, William Merritt</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/William_Merritt_Chase</meta>
-		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/n79061094</meta>
+		<link href="https://en.wikipedia.org/wiki/William_Merritt_Chase" refines="#artist" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79061094.html" refines="#artist" rel="schema:sameAs"/>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
 		<dc:contributor id="author-of-introduction">Christopher Morley</dc:contributor>
 		<meta property="file-as" refines="#author-of-introduction">Morley, Christopher</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#author-of-introduction">https://en.wikipedia.org/wiki/Christopher_Morley</meta>
-		<meta property="se:url.authority.nacoaf" refines="#author-of-introduction">http://id.loc.gov/authorities/names/n50006133</meta>
+		<link href="https://en.wikipedia.org/wiki/Christopher_Morley" refines="#author-of-introduction" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n50006133.html" refines="#author-of-introduction" rel="schema:sameAs"/>
 		<meta property="role" refines="#author-of-introduction" scheme="marc:relators">win</meta>
 		<dc:contributor id="transcriber-1">Wikisource</dc:contributor>
 		<meta property="file-as" refines="#transcriber-1">Wikisource</meta>
-		<meta property="se:url.homepage" refines="#transcriber-1">https://en.wikisource.org/</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#transcriber-1">https://en.wikipedia.org/wiki/Wikisource</meta>
+		<link href="https://en.wikisource.org/" refines="#transcriber-1" rel="schema:url"/>
+		<link href="https://en.wikipedia.org/wiki/Wikisource" refines="#transcriber-1" rel="schema:sameAs"/>
 		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
 		<dc:contributor id="producer-1">Jason DeCock</dc:contributor>
 		<meta property="file-as" refines="#producer-1">DeCock, Jason</meta>
@@ -86,7 +89,7 @@
 		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
 		<dc:contributor id="producer-2">David Grigg</dc:contributor>
 		<meta property="file-as" refines="#producer-2">Grigg, David</meta>
-		<meta property="se:url.homepage" refines="#producer-2">https://thegriggs.org/david/</meta>
+		<link href="https://thegriggs.org/david/" refines="#producer-2" rel="schema:url"/>
 		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
 	</metadata>
 	<manifest>
